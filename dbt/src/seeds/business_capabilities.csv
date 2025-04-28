@@ -1,0 +1,14 @@
+capability_id,capability_name,description,capability_type
+customer_acquisition,顧客獲得,新規顧客の開拓と獲得に関する能力,strategic
+customer_management,顧客管理,既存顧客との関係維持と管理に関する能力,core
+product_development,製品開発,新製品・サービスの企画と開発に関する能力,strategic
+product_delivery,製品提供,製品・サービスの提供と配送に関する能力,core
+sales_management,販売管理,販売活動の計画と実行に関する能力,core
+financial_management,財務管理,資金調達と運用に関する能力,support
+accounting,会計処理,会計記録と決算に関する能力,support
+hr_management,人材管理,人材の採用・育成・評価に関する能力,support
+it_service_delivery,ITサービス提供,ITサービスの設計と提供に関する能力,support
+it_operations,IT運用,ITシステムの安定運用に関する能力,support
+procurement,調達,物品・サービスの調達に関する能力,support
+compliance,法令遵守,法規制への対応と遵守に関する能力,governance
+risk_management,リスク管理,リスクの特定と対応に関する能力,governance

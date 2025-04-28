@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "tbm_db"."public_raw"."cost_entries" ("cost_entry_id" integer,"fiscal_year" integer,"fiscal_month" integer,"cost_pool_id" text,"cost_sub_pool_id" text,"vendor" text,"description" text,"amount" integer)
+  ;
+    -- dbt seed --
+    
+          insert into "tbm_db"."public_raw"."cost_entries" ("cost_entry_id", "fiscal_year", "fiscal_month", "cost_pool_id", "cost_sub_pool_id", "vendor", "description", "amount") values
+          (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s)
+      
+
+;
+  

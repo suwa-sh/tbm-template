@@ -1,0 +1,36 @@
+name: 'tbm_template'
+version: '1.0.0'
+config-version: 2
+
+profile: 'tbm'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  tbm_template:
+    staging:
+      +materialized: view
+    core:
+      +materialized: table
+    marts:
+      +materialized: table
+      finance:
+        +schema: finance
+      it:
+        +schema: it
+      business:
+        +schema: business
+
+seeds:
+  tbm_template:
+    +schema: raw

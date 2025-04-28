@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "tbm_db"."public_raw"."tech_services" ("service_id" text,"service_name" text,"description" text,"service_type" text)
+  ;
+    -- dbt seed --
+    
+          insert into "tbm_db"."public_raw"."tech_services" ("service_id", "service_name", "description", "service_type") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+      
+
+;
+  

@@ -1,0 +1,11 @@
+cost_pool_id,cost_pool_name,description
+internal_labor,内部労働力,IT部門の従業員関連費用
+external_labor,外部労働力,外部リソースの調達費用
+hardware,ハードウェア,物理的技術資産の費用
+software,ソフトウェア,ソフトウェア資産の費用
+external_services,外部サービス,外部サービスプロバイダーの費用
+facilities,設備と電力,データセンター関連費用
+telecom,テレコム,通信関連費用
+internal_services,内部サービス,内部共有サービス費用
+other,その他,その他のIT関連費用
+capex,資本支出,資本的支出項目

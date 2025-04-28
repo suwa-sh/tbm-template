@@ -1,0 +1,13 @@
+service_id,service_name,description,service_type
+erp,ERP運用保守,企業の基幹業務システム（ERP）を安定稼働させるためのサービス,business_solution
+crm,CRM運用保守,顧客関係管理システムの運用保守サービス,business_solution
+sales_force,営業支援,営業活動を支援するシステムの提供・運用サービス,business_solution
+email,メールサービス,従業員が利用する電子メールシステムの提供・運用サービス,workplace_solution
+collaboration,コラボレーション,チームコラボレーションツールの提供・運用サービス,workplace_solution
+helpdesk,ヘルプデスク,PCトラブルやソフトウェア操作に関する問い合わせに対応するサービス,delivery_solution
+file_sharing,ファイル共有,組織内でファイルを安全に共有・保管するためのサービス,platform_solution
+remote_access,リモートアクセス,社外から社内ネットワークへ安全に接続するためのサービス,infrastructure_solution
+web_hosting,Webホスティング,企業のウェブサイトを公開・運用するための基盤サービス,infrastructure_solution
+database_service,データベースサービス,データベース環境の提供・運用サービス,platform_solution
+security_service,セキュリティサービス,情報セキュリティ対策の提供・運用サービス,security_solution
+backup_recovery,バックアップ・リカバリ,データのバックアップと復旧サービス,infrastructure_solution

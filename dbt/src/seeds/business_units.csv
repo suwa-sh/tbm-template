@@ -1,0 +1,10 @@
+business_unit_id,business_unit_name,description,employee_count,parent_id
+sales,営業部門,顧客開拓と販売活動を担当する部門,100,
+finance,経理部門,財務管理と会計処理を担当する部門,30,
+it,IT部門,情報システムの開発と運用を担当する部門,20,
+sales_domestic,国内営業,国内市場向けの営業活動を担当,60,sales
+sales_overseas,海外営業,海外市場向けの営業活動を担当,40,sales
+finance_accounting,経理,会計処理と決算業務を担当,20,finance
+finance_planning,財務企画,資金計画と財務戦略を担当,10,finance
+it_development,システム開発,アプリケーション開発を担当,10,it
+it_infrastructure,インフラ運用,ITインフラの運用管理を担当,10,it

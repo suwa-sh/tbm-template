@@ -1,0 +1,11 @@
+tbm:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('DBT_DB_HOST', 'postgres') }}"
+      port: "{{ env_var('DBT_DB_PORT', 5432) | as_number }}"
+      user: "{{ env_var('DBT_DB_USER', 'tbm_user') }}"
+      password: "{{ env_var('DBT_DB_PASSWORD', 'tbm_password') }}"
+      dbname: "{{ env_var('DBT_DB_NAME', 'tbm_db') }}"
+      schema: "{{ env_var('DBT_DB_SCHEMA', 'public') }}"
