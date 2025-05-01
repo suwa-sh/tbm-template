@@ -3,17 +3,16 @@ with tower_costs as (
 ),
 
 tech_services as (
-    select * from {{ ref('stg_tech_services') }}
+    select * from {{ ref('stg__master__it_services') }}
 ),
 
 allocations as (
-    select * from {{ ref('stg_tower_to_service_allocations') }}
+    select * from {{ ref('stg__allocations__tower_to_service') }}
 ),
 
 -- ITタワーコストとテクノロジーサービスへの配賦
 tower_to_service_allocation as (
     select
-        tc.cost_entry_id,
         tc.fiscal_year,
         tc.fiscal_month,
         tc.cost_pool_id,
@@ -36,7 +35,9 @@ tower_to_service_allocation as (
         a.description as service_allocation_description
     from tower_costs tc
     inner join allocations a 
-        on tc.it_tower_id = a.it_tower_id 
+        on tc.fiscal_year = a.fiscal_year
+        and tc.fiscal_month = a.fiscal_month
+        and tc.it_tower_id = a.it_tower_id 
         and tc.it_sub_tower_id = a.it_sub_tower_id
     left join tech_services ts on a.service_id = ts.service_id
 )

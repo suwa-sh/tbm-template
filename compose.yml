@@ -19,14 +19,14 @@ services:
       timeout: 5s
       retries: 5
 
-  # dbt (データパイプライン)
+  # dbt (データパイプライン) & dlt (データ収集)
   dbt:
     build:
       context: .
       dockerfile: Dockerfile.dev
     container_name: tbm-dbt
     volumes:
-      - ./dbt:/app/dbt
+      - .:/app
     environment:
       DBT_PROFILES_DIR: /app/dbt/files
       DBT_PROJECT_DIR: /app/dbt/src
@@ -35,25 +35,8 @@ services:
       POSTGRES_USER: tbm_user
       POSTGRES_PASSWORD: tbm_password
       POSTGRES_DB: tbm_db
-    depends_on:
-      postgres:
-        condition: service_healthy
-    command: tail -f /dev/null
-
-  # dlt (データ収集)
-  dlt:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    container_name: tbm-dlt
-    volumes:
-      - ./dlt:/app/dlt
-    environment:
-      DB_HOST: postgres
-      DB_PORT: 5432
-      DB_USER: tbm_user
-      DB_PASSWORD: tbm_password
-      DB_NAME: tbm_db
+    ports:
+      - "8080:8080"
     depends_on:
       postgres:
         condition: service_healthy

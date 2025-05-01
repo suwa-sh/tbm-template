@@ -3,17 +3,16 @@ with service_costs as (
 ),
 
 business_capabilities as (
-    select * from {{ ref('stg_business_capabilities') }}
+    select * from {{ ref('stg__master__business_capabilities') }}
 ),
 
 allocations as (
-    select * from {{ ref('stg_service_to_capability_allocations') }}
+    select * from {{ ref('stg__allocations__service_to_capability') }}
 ),
 
 -- テクノロジーサービスコストとビジネスケイパビリティへの配賦
 service_to_capability_allocation as (
     select
-        sc.cost_entry_id,
         sc.fiscal_year,
         sc.fiscal_month,
         sc.cost_pool_id,
@@ -39,8 +38,12 @@ service_to_capability_allocation as (
         sc.service_allocation_description,
         a.description as capability_allocation_description
     from service_costs sc
-    inner join allocations a on sc.service_id = a.service_id
-    left join business_capabilities bc on a.capability_id = bc.capability_id
+    inner join allocations a 
+        on sc.fiscal_year = a.fiscal_year
+        and sc.fiscal_month = a.fiscal_month
+        and sc.service_id = a.service_id
+    left join business_capabilities bc
+        on a.capability_id = bc.capability_id
 )
 
 select * from service_to_capability_allocation

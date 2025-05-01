@@ -6,9 +6,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# タイムゾーンを設定
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    tzdata \
+        tzdata git\
     && rm -rf /var/lib/apt/lists/* \
     && ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
     && echo "Asia/Tokyo" > /etc/timezone

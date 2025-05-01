@@ -1,8 +1,12 @@
 # TBM Template
 
-TBM（Technology Business Management）を小さく始めるためのテンプレートプロジェクトです。
 
 ## 概要
+
+- TBM（Technology Business Management）を小さく始めるためのテンプレートプロジェクトです。
+- [Zenn Book: TBMガイド](https://zenn.dev/suwash/books/tbm-guide_202504)をベースにしています。
+
+## システムアーキテクチャ
 
 このプロジェクトは、TBMの基本的な構成要素を含み、Docker Composeを使って簡単に環境を構築できるようになっています。以下のコンポーネントが含まれています：
 
@@ -11,9 +15,40 @@ TBM（Technology Business Management）を小さく始めるためのテンプ�
 - **dlt**: データ収集
 - **Grafana**: 可視化
 
+```mermaid
+graph TD
+    subgraph データ収集サンプル
+        DLT[dlt]
+        EXT1[Salesforce]
+        EXT2[SAP]
+        EXT3[MS365]
+        EXT4[CRM]
+        EXT1 --> DLT
+        EXT2 --> DLT
+        EXT3 --> DLT
+        EXT4 --> DLT
+    end
+
+    subgraph データストレージ
+        DB[(PostgreSQL)]
+        DLT --> DB
+    end
+
+    subgraph データ変換
+        DBT[dbt]
+        DB --> DBT
+        DBT --> DB
+    end
+
+    subgraph 可視化
+        GF[Grafana]
+        DB --> GF
+    end
+```
+
 ## 前提条件
 
-- Docker と Docker Compose がインストールされていること
+- Docker Desktopがインストールされていること
 - Git がインストールされていること
 
 ## セットアップ方法
@@ -21,17 +56,17 @@ TBM（Technology Business Management）を小さく始めるためのテンプ�
 ### 1. リポジトリのクローン
 
 ```bash
-git clone https://github.com/your-username/tbm-template.git
+git clone https://github.com/suwa-sh/tbm-template.git
 cd tbm-template
 ```
 
 ### 2. 環境の起動
 
 ```bash
+docker compose build
 docker compose up -d
+# vscode devコンテナとしても利用できます。
 ```
-
-これにより、必要なコンテナがすべて起動します。
 
 ### 3. サンプルデータのロード
 
@@ -41,19 +76,36 @@ docker exec -it tbm-dbt bash
 
 # サンプルデータをロード
 cd /app/dbt/src
-dbt seed
-dbt run
+dbt seed --full-refresh
+dbt run --full-refresh
+
+# データ検証
+dbt test
+
+# ドキュメント生成
+dbt docs generate
+dbt docs serve
 
 # コンテナから出る
 exit
 ```
 
+- lineage graph
+  - ![](https://share.cleanshot.com/8xTDNgF9+)
+
+
 ### 4. Grafanaへのアクセス
 
-ブラウザで http://localhost:3000 にアクセスします。
-
-- ユーザー名: admin
-- パスワード: admin
+- url: <http://localhost:3000>
+  - ユーザー名: admin
+  - パスワード: admin
+- ダッシュボード
+  - 全社
+    - ![](https://share.cleanshot.com/xSmvyBzV+)
+  - 部門ごと
+    - ![](https://share.cleanshot.com/7jF82Zmc+)
+  - 配賦内訳
+    - ![](https://share.cleanshot.com/LnKFbQ6R+)
 
 ## プロジェクト構成
 
@@ -63,7 +115,8 @@ tbm-template/
 │   ├── files/              # dbt設定ファイル
 │   └── src/                # dbtプロジェクト
 │       ├── seeds/          # サンプルデータ
-│       └── models/         # データモデル
+│       ├── models/         # データモデル
+│       └── tests/          # 整合性チェック
 ├── dlt/                    # データ収集
 │   └── connectors/         # 各種データソースコネクタ
 ├── grafana/                # 可視化
@@ -73,16 +126,21 @@ tbm-template/
 └── requirements.txt        # Pythonパッケージ
 ```
 
+
 ## カスタマイズ方法
 
 ### 配賦ルールのカスタマイズ
 
 配賦ルールは以下のファイルで定義されています：
 
-- `dbt/src/seeds/cost_to_tower_allocations.csv`: コストプールからITタワーへの配賦
-- `dbt/src/seeds/tower_to_service_allocations.csv`: ITタワーからテクノロジーサービスへの配賦
-- `dbt/src/seeds/service_to_business_allocations.csv`: テクノロジーサービスからビジネスユニットへの配賦
-- `dbt/src/seeds/service_to_capability_allocations.csv`: テクノロジーサービスからビジネスケイパビリティへの配賦
+- `dbt/src/seeds/master_tbm__*.csv`: TBMタクソノミーに合わせた定義 ※基本的に変更不要です。
+  - 参考
+    - [TBMタクソノミー v4.0 機械翻訳](./docs/TBM_Taxonomy_V4.0_ja.pdf)
+    - [TBMタクソノミー v4.0 まとめ](./docs/TBMタクソノミー_v4.0.md)
+- `dbt/src/seeds/master__*.csv`: 組織固有のデータ
+- `dbt/src/seeds/allocations__*.csv`: 配賦のルール
+- `dbt/src/seeds/entries_plan.csv`: 予算データ
+- `dbt/src/seeds/entries_cost.csv`: コストデータ
 
 これらのファイルを編集し、`dbt seed`コマンドを実行することで、配賦ルールを更新できます。
 
@@ -98,17 +156,13 @@ tbm-template/
 これらのコネクタを実際の環境に合わせてカスタマイズし、`dlt/main.py`を実行することで、データを収集できます。
 
 ```bash
-# dltコンテナに入る
-docker exec -it tbm-dlt bash
+# dbtコンテナににdltもインストールされています
+docker exec -it tbm-dbt bash
 
 # データ収集を実行
-cd /app/dlt
-python main.py
+cd /app
+python ./dlt/main.py
 
 # コンテナから出る
 exit
 ```
-
-## ライセンス
-
-このプロジェクトはMITライセンスの下で公開されています。

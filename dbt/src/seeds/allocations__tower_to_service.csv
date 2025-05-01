@@ -1,0 +1,639 @@
+fiscal_year,fiscal_month,it_tower_id,it_sub_tower_id,service_id,allocation_method,allocation_value,description
+2015,3,compute,servers,erp,usage_based,0.40,ERPサービスのサーバーリソース利用
+2015,3,compute,servers,crm,usage_based,0.30,CRMサービスのサーバーリソース利用
+2015,3,compute,servers,sales_force,usage_based,0.10,営業支援サービスのサーバーリソース利用
+2015,3,compute,servers,file_sharing,usage_based,0.10,ファイル共有サービスのサーバーリソース利用
+2015,3,compute,servers,web_hosting,usage_based,0.10,Webホスティングサービスのサーバーリソース利用
+2015,3,compute,unix,erp,usage_based,0.70,ERPサービスのUNIXサーバーリソース利用
+2015,3,compute,unix,database_service,usage_based,0.30,データベースサービスのUNIXサーバーリソース利用
+2015,3,storage,online_storage,erp,usage_based,0.30,ERPサービスのストレージリソース利用
+2015,3,storage,online_storage,crm,usage_based,0.20,CRMサービスのストレージリソース利用
+2015,3,storage,online_storage,file_sharing,usage_based,0.40,ファイル共有サービスのストレージリソース利用
+2015,3,storage,online_storage,database_service,usage_based,0.10,データベースサービスのストレージリソース利用
+2015,3,storage,offline_storage,backup_recovery,direct,1.00,バックアップ・リカバリサービスのストレージリソース利用
+2015,3,network,lan_wan,erp,usage_based,0.20,ERPサービスのネットワークリソース利用
+2015,3,network,lan_wan,crm,usage_based,0.20,CRMサービスのネットワークリソース利用
+2015,3,network,lan_wan,sales_force,usage_based,0.10,営業支援サービスのネットワークリソース利用
+2015,3,network,lan_wan,email,usage_based,0.20,メールサービスのネットワークリソース利用
+2015,3,network,lan_wan,collaboration,usage_based,0.10,コラボレーションサービスのネットワークリソース利用
+2015,3,network,lan_wan,file_sharing,usage_based,0.10,ファイル共有サービスのネットワークリソース利用
+2015,3,network,lan_wan,web_hosting,usage_based,0.10,Webホスティングサービスのネットワークリソース利用
+2015,3,network,transport,remote_access,direct,1.00,リモートアクセスサービスのネットワークリソース利用
+2015,3,platform,database,erp,usage_based,0.50,ERPサービスのデータベースリソース利用
+2015,3,platform,database,crm,usage_based,0.30,CRMサービスのデータベースリソース利用
+2015,3,platform,database,sales_force,usage_based,0.20,営業支援サービスのデータベースリソース利用
+2015,3,platform,middleware,erp,usage_based,0.60,ERPサービスのミドルウェアリソース利用
+2015,3,platform,middleware,crm,usage_based,0.40,CRMサービスのミドルウェアリソース利用
+2015,3,application,app_development,crm,direct,0.70,CRMサービスのアプリケーション開発リソース利用
+2015,3,application,app_development,sales_force,direct,0.30,営業支援サービスのアプリケーション開発リソース利用
+2015,3,application,app_support,erp,direct,0.60,ERPサービスのアプリケーションサポートリソース利用
+2015,3,application,app_support,crm,direct,0.30,CRMサービスのアプリケーションサポートリソース利用
+2015,3,application,app_support,sales_force,direct,0.10,営業支援サービスのアプリケーションサポートリソース利用
+2015,3,application,business_software,erp,direct,0.50,ERPサービスのビジネスソフトウェアリソース利用
+2015,3,application,business_software,crm,direct,0.20,CRMサービスのビジネスソフトウェアリソース利用
+2015,3,application,business_software,sales_force,direct,0.30,営業支援サービスのビジネスソフトウェアリソース利用
+2015,3,end_user,workspace,email,user_count,0.30,メールサービスのワークスペースリソース利用
+2015,3,end_user,workspace,collaboration,user_count,0.30,コラボレーションサービスのワークスペースリソース利用
+2015,3,end_user,workspace,file_sharing,user_count,0.20,ファイル共有サービスのワークスペースリソース利用
+2015,3,end_user,workspace,remote_access,user_count,0.20,リモートアクセスサービスのワークスペースリソース利用
+2015,3,end_user,end_user_software,email,direct,0.50,メールサービスのエンドユーザーソフトウェアリソース利用
+2015,3,end_user,end_user_software,collaboration,direct,0.50,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2015,3,end_user,helpdesk,helpdesk,direct,1.00,ヘルプデスクサービスのヘルプデスクリソース利用
+2015,3,security,security_ops,security_service,direct,1.00,セキュリティサービスのセキュリティリソース利用
+2015,3,data_center,enterprise_dc,erp,usage_based,0.30,ERPサービスのデータセンターリソース利用
+2015,3,data_center,enterprise_dc,crm,usage_based,0.20,CRMサービスのデータセンターリソース利用
+2015,3,data_center,enterprise_dc,sales_force,usage_based,0.10,営業支援サービスのデータセンターリソース利用
+2015,3,data_center,enterprise_dc,email,usage_based,0.10,メールサービスのデータセンターリソース利用
+2015,3,data_center,enterprise_dc,collaboration,usage_based,0.10,コラボレーションサービスのデータセンターリソース利用
+2015,3,data_center,enterprise_dc,file_sharing,usage_based,0.10,ファイル共有サービスのデータセンターリソース利用
+2015,3,data_center,enterprise_dc,database_service,usage_based,0.10,データベースサービスのデータセンターリソース利用
+2015,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2015,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2015,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2015,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2015,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2015,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2015,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2015,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2015,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2015,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト
+2016,3,compute,servers,erp,usage_based,0.39,ERPサービスのサーバーリソース利用
+2016,3,compute,servers,crm,usage_based,0.30,CRMサービスのサーバーリソース利用
+2016,3,compute,servers,sales_force,usage_based,0.10,営業支援サービスのサーバーリソース利用
+2016,3,compute,servers,file_sharing,usage_based,0.11,ファイル共有サービスのサーバーリソース利用
+2016,3,compute,servers,web_hosting,usage_based,0.10,Webホスティングサービスのサーバーリソース利用
+2016,3,compute,unix,erp,usage_based,0.69,ERPサービスのUNIXサーバーリソース利用
+2016,3,compute,unix,database_service,usage_based,0.31,データベースサービスのUNIXサーバーリソース利用
+2016,3,storage,online_storage,erp,usage_based,0.30,ERPサービスのストレージリソース利用
+2016,3,storage,online_storage,crm,usage_based,0.20,CRMサービスのストレージリソース利用
+2016,3,storage,online_storage,file_sharing,usage_based,0.41,ファイル共有サービスのストレージリソース利用
+2016,3,storage,online_storage,database_service,usage_based,0.09,データベースサービスのストレージリソース利用
+2016,3,storage,offline_storage,backup_recovery,direct,1.00,バックアップ・リカバリサービスのストレージリソース利用
+2016,3,network,lan_wan,erp,usage_based,0.20,ERPサービスのネットワークリソース利用
+2016,3,network,lan_wan,crm,usage_based,0.19,CRMサービスのネットワークリソース利用
+2016,3,network,lan_wan,sales_force,usage_based,0.10,営業支援サービスのネットワークリソース利用
+2016,3,network,lan_wan,email,usage_based,0.21,メールサービスのネットワークリソース利用
+2016,3,network,lan_wan,collaboration,usage_based,0.10,コラボレーションサービスのネットワークリソース利用
+2016,3,network,lan_wan,file_sharing,usage_based,0.10,ファイル共有サービスのネットワークリソース利用
+2016,3,network,lan_wan,web_hosting,usage_based,0.10,Webホスティングサービスのネットワークリソース利用
+2016,3,network,transport,remote_access,direct,1.00,リモートアクセスサービスのネットワークリソース利用
+2016,3,platform,database,erp,usage_based,0.49,ERPサービスのデータベースリソース利用
+2016,3,platform,database,crm,usage_based,0.31,CRMサービスのデータベースリソース利用
+2016,3,platform,database,sales_force,usage_based,0.20,営業支援サービスのデータベースリソース利用
+2016,3,platform,middleware,erp,usage_based,0.59,ERPサービスのミドルウェアリソース利用
+2016,3,platform,middleware,crm,usage_based,0.41,CRMサービスのミドルウェアリソース利用
+2016,3,application,app_development,crm,direct,0.69,CRMサービスのアプリケーション開発リソース利用
+2016,3,application,app_development,sales_force,direct,0.31,営業支援サービスのアプリケーション開発リソース利用
+2016,3,application,app_support,erp,direct,0.59,ERPサービスのアプリケーションサポートリソース利用
+2016,3,application,app_support,crm,direct,0.31,CRMサービスのアプリケーションサポートリソース利用
+2016,3,application,app_support,sales_force,direct,0.10,営業支援サービスのアプリケーションサポートリソース利用
+2016,3,application,business_software,erp,direct,0.49,ERPサービスのビジネスソフトウェアリソース利用
+2016,3,application,business_software,crm,direct,0.21,CRMサービスのビジネスソフトウェアリソース利用
+2016,3,application,business_software,sales_force,direct,0.30,営業支援サービスのビジネスソフトウェアリソース利用
+2016,3,end_user,workspace,email,user_count,0.29,メールサービスのワークスペースリソース利用
+2016,3,end_user,workspace,collaboration,user_count,0.31,コラボレーションサービスのワークスペースリソース利用
+2016,3,end_user,workspace,file_sharing,user_count,0.20,ファイル共有サービスのワークスペースリソース利用
+2016,3,end_user,workspace,remote_access,user_count,0.20,リモートアクセスサービスのワークスペースリソース利用
+2016,3,end_user,end_user_software,email,direct,0.48,メールサービスのエンドユーザーソフトウェアリソース利用
+2016,3,end_user,end_user_software,collaboration,direct,0.52,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2016,3,end_user,helpdesk,helpdesk,direct,1.00,ヘルプデスクサービスのヘルプデスクリソース利用
+2016,3,security,security_ops,security_service,direct,1.00,セキュリティサービスのセキュリティリソース利用
+2016,3,data_center,enterprise_dc,erp,usage_based,0.29,ERPサービスのデータセンターリソース利用
+2016,3,data_center,enterprise_dc,crm,usage_based,0.20,CRMサービスのデータセンターリソース利用
+2016,3,data_center,enterprise_dc,sales_force,usage_based,0.10,営業支援サービスのデータセンターリソース利用
+2016,3,data_center,enterprise_dc,email,usage_based,0.11,メールサービスのデータセンターリソース利用
+2016,3,data_center,enterprise_dc,collaboration,usage_based,0.10,コラボレーションサービスのデータセンターリソース利用
+2016,3,data_center,enterprise_dc,file_sharing,usage_based,0.10,ファイル共有サービスのデータセンターリソース利用
+2016,3,data_center,enterprise_dc,database_service,usage_based,0.10,データベースサービスのデータセンターリソース利用
+2016,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2016,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2016,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2016,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2016,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2016,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2016,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2016,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2016,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2016,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト
+2017,3,compute,servers,erp,usage_based,0.38,ERPサービスのサーバーリソース利用
+2017,3,compute,servers,crm,usage_based,0.31,CRMサービスのサーバーリソース利用
+2017,3,compute,servers,sales_force,usage_based,0.10,営業支援サービスのサーバーリソース利用
+2017,3,compute,servers,file_sharing,usage_based,0.11,ファイル共有サービスのサーバーリソース利用
+2017,3,compute,servers,web_hosting,usage_based,0.10,Webホスティングサービスのサーバーリソース利用
+2017,3,compute,unix,erp,usage_based,0.68,ERPサービスのUNIXサーバーリソース利用
+2017,3,compute,unix,database_service,usage_based,0.32,データベースサービスのUNIXサーバーリソース利用
+2017,3,storage,online_storage,erp,usage_based,0.29,ERPサービスのストレージリソース利用
+2017,3,storage,online_storage,crm,usage_based,0.21,CRMサービスのストレージリソース利用
+2017,3,storage,online_storage,file_sharing,usage_based,0.42,ファイル共有サービスのストレージリソース利用
+2017,3,storage,online_storage,database_service,usage_based,0.08,データベースサービスのストレージリソース利用
+2017,3,storage,offline_storage,backup_recovery,direct,1.00,バックアップ・リカバリサービスのストレージリソース利用
+2017,3,network,lan_wan,erp,usage_based,0.19,ERPサービスのネットワークリソース利用
+2017,3,network,lan_wan,crm,usage_based,0.19,CRMサービスのネットワークリソース利用
+2017,3,network,lan_wan,sales_force,usage_based,0.11,営業支援サービスのネットワークリソース利用
+2017,3,network,lan_wan,email,usage_based,0.21,メールサービスのネットワークリソース利用
+2017,3,network,lan_wan,collaboration,usage_based,0.10,コラボレーションサービスのネットワークリソース利用
+2017,3,network,lan_wan,file_sharing,usage_based,0.10,ファイル共有サービスのネットワークリソース利用
+2017,3,network,lan_wan,web_hosting,usage_based,0.10,Webホスティングサービスのネットワークリソース利用
+2017,3,network,transport,remote_access,direct,1.00,リモートアクセスサービスのネットワークリソース利用
+2017,3,platform,database,erp,usage_based,0.48,ERPサービスのデータベースリソース利用
+2017,3,platform,database,crm,usage_based,0.32,CRMサービスのデータベースリソース利用
+2017,3,platform,database,sales_force,usage_based,0.20,営業支援サービスのデータベースリソース利用
+2017,3,platform,middleware,erp,usage_based,0.58,ERPサービスのミドルウェアリソース利用
+2017,3,platform,middleware,crm,usage_based,0.42,CRMサービスのミドルウェアリソース利用
+2017,3,application,app_development,crm,direct,0.68,CRMサービスのアプリケーション開発リソース利用
+2017,3,application,app_development,sales_force,direct,0.32,営業支援サービスのアプリケーション開発リソース利用
+2017,3,application,app_support,erp,direct,0.58,ERPサービスのアプリケーションサポートリソース利用
+2017,3,application,app_support,crm,direct,0.32,CRMサービスのアプリケーションサポートリソース利用
+2017,3,application,app_support,sales_force,direct,0.10,営業支援サービスのアプリケーションサポートリソース利用
+2017,3,application,business_software,erp,direct,0.48,ERPサービスのビジネスソフトウェアリソース利用
+2017,3,application,business_software,crm,direct,0.22,CRMサービスのビジネスソフトウェアリソース利用
+2017,3,application,business_software,sales_force,direct,0.30,営業支援サービスのビジネスソフトウェアリソース利用
+2017,3,end_user,workspace,email,user_count,0.28,メールサービスのワークスペースリソース利用
+2017,3,end_user,workspace,collaboration,user_count,0.32,コラボレーションサービスのワークスペースリソース利用
+2017,3,end_user,workspace,file_sharing,user_count,0.20,ファイル共有サービスのワークスペースリソース利用
+2017,3,end_user,workspace,remote_access,user_count,0.20,リモートアクセスサービスのワークスペースリソース利用
+2017,3,end_user,end_user_software,email,direct,0.46,メールサービスのエンドユーザーソフトウェアリソース利用
+2017,3,end_user,end_user_software,collaboration,direct,0.54,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2017,3,end_user,helpdesk,helpdesk,direct,1.00,ヘルプデスクサービスのヘルプデスクリソース利用
+2017,3,security,security_ops,security_service,direct,1.00,セキュリティサービスのセキュリティリソース利用
+2017,3,data_center,enterprise_dc,erp,usage_based,0.28,ERPサービスのデータセンターリソース利用
+2017,3,data_center,enterprise_dc,crm,usage_based,0.21,CRMサービスのデータセンターリソース利用
+2017,3,data_center,enterprise_dc,sales_force,usage_based,0.10,営業支援サービスのデータセンターリソース利用
+2017,3,data_center,enterprise_dc,email,usage_based,0.11,メールサービスのデータセンターリソース利用
+2017,3,data_center,enterprise_dc,collaboration,usage_based,0.10,コラボレーションサービスのデータセンターリソース利用
+2017,3,data_center,enterprise_dc,file_sharing,usage_based,0.10,ファイル共有サービスのデータセンターリソース利用
+2017,3,data_center,enterprise_dc,database_service,usage_based,0.10,データベースサービスのデータセンターリソース利用
+2017,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2017,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2017,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2017,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2017,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2017,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2017,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2017,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2017,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2017,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト
+2018,3,compute,servers,erp,usage_based,0.37,ERPサービスのサーバーリソース利用
+2018,3,compute,servers,crm,usage_based,0.31,CRMサービスのサーバーリソース利用
+2018,3,compute,servers,sales_force,usage_based,0.11,営業支援サービスのサーバーリソース利用
+2018,3,compute,servers,file_sharing,usage_based,0.11,ファイル共有サービスのサーバーリソース利用
+2018,3,compute,servers,web_hosting,usage_based,0.10,Webホスティングサービスのサーバーリソース利用
+2018,3,compute,unix,erp,usage_based,0.67,ERPサービスのUNIXサーバーリソース利用
+2018,3,compute,unix,database_service,usage_based,0.33,データベースサービスのUNIXサーバーリソース利用
+2018,3,storage,online_storage,erp,usage_based,0.28,ERPサービスのストレージリソース利用
+2018,3,storage,online_storage,crm,usage_based,0.22,CRMサービスのストレージリソース利用
+2018,3,storage,online_storage,file_sharing,usage_based,0.43,ファイル共有サービスのストレージリソース利用
+2018,3,storage,online_storage,database_service,usage_based,0.07,データベースサービスのストレージリソース利用
+2018,3,storage,offline_storage,backup_recovery,direct,1.00,バックアップ・リカバリサービスのストレージリソース利用
+2018,3,network,lan_wan,erp,usage_based,0.18,ERPサービスのネットワークリソース利用
+2018,3,network,lan_wan,crm,usage_based,0.19,CRMサービスのネットワークリソース利用
+2018,3,network,lan_wan,sales_force,usage_based,0.11,営業支援サービスのネットワークリソース利用
+2018,3,network,lan_wan,email,usage_based,0.22,メールサービスのネットワークリソース利用
+2018,3,network,lan_wan,collaboration,usage_based,0.10,コラボレーションサービスのネットワークリソース利用
+2018,3,network,lan_wan,file_sharing,usage_based,0.10,ファイル共有サービスのネットワークリソース利用
+2018,3,network,lan_wan,web_hosting,usage_based,0.10,Webホスティングサービスのネットワークリソース利用
+2018,3,network,transport,remote_access,direct,1.00,リモートアクセスサービスのネットワークリソース利用
+2018,3,platform,database,erp,usage_based,0.47,ERPサービスのデータベースリソース利用
+2018,3,platform,database,crm,usage_based,0.33,CRMサービスのデータベースリソース利用
+2018,3,platform,database,sales_force,usage_based,0.20,営業支援サービスのデータベースリソース利用
+2018,3,platform,middleware,erp,usage_based,0.57,ERPサービスのミドルウェアリソース利用
+2018,3,platform,middleware,crm,usage_based,0.43,CRMサービスのミドルウェアリソース利用
+2018,3,application,app_development,crm,direct,0.67,CRMサービスのアプリケーション開発リソース利用
+2018,3,application,app_development,sales_force,direct,0.33,営業支援サービスのアプリケーション開発リソース利用
+2018,3,application,app_support,erp,direct,0.57,ERPサービスのアプリケーションサポートリソース利用
+2018,3,application,app_support,crm,direct,0.33,CRMサービスのアプリケーションサポートリソース利用
+2018,3,application,app_support,sales_force,direct,0.10,営業支援サービスのアプリケーションサポートリソース利用
+2018,3,application,business_software,erp,direct,0.47,ERPサービスのビジネスソフトウェアリソース利用
+2018,3,application,business_software,crm,direct,0.23,CRMサービスのビジネスソフトウェアリソース利用
+2018,3,application,business_software,sales_force,direct,0.30,営業支援サービスのビジネスソフトウェアリソース利用
+2018,3,end_user,workspace,email,user_count,0.27,メールサービスのワークスペースリソース利用
+2018,3,end_user,workspace,collaboration,user_count,0.33,コラボレーションサービスのワークスペースリソース利用
+2018,3,end_user,workspace,file_sharing,user_count,0.20,ファイル共有サービスのワークスペースリソース利用
+2018,3,end_user,workspace,remote_access,user_count,0.20,リモートアクセスサービスのワークスペースリソース利用
+2018,3,end_user,end_user_software,email,direct,0.44,メールサービスのエンドユーザーソフトウェアリソース利用
+2018,3,end_user,end_user_software,collaboration,direct,0.56,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2018,3,end_user,helpdesk,helpdesk,direct,1.00,ヘルプデスクサービスのヘルプデスクリソース利用
+2018,3,security,security_ops,security_service,direct,1.00,セキュリティサービスのセキュリティリソース利用
+2018,3,data_center,enterprise_dc,erp,usage_based,0.27,ERPサービスのデータセンターリソース利用
+2018,3,data_center,enterprise_dc,crm,usage_based,0.22,CRMサービスのデータセンターリソース利用
+2018,3,data_center,enterprise_dc,sales_force,usage_based,0.10,営業支援サービスのデータセンターリソース利用
+2018,3,data_center,enterprise_dc,email,usage_based,0.11,メールサービスのデータセンターリソース利用
+2018,3,data_center,enterprise_dc,collaboration,usage_based,0.10,コラボレーションサービスのデータセンターリソース利用
+2018,3,data_center,enterprise_dc,file_sharing,usage_based,0.10,ファイル共有サービスのデータセンターリソース利用
+2018,3,data_center,enterprise_dc,database_service,usage_based,0.10,データベースサービスのデータセンターリソース利用
+2018,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2018,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2018,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2018,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2018,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2018,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2018,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2018,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2018,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2018,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト
+2019,3,compute,servers,erp,usage_based,0.36,ERPサービスのサーバーリソース利用
+2019,3,compute,servers,crm,usage_based,0.32,CRMサービスのサーバーリソース利用
+2019,3,compute,servers,sales_force,usage_based,0.11,営業支援サービスのサーバーリソース利用
+2019,3,compute,servers,file_sharing,usage_based,0.11,ファイル共有サービスのサーバーリソース利用
+2019,3,compute,servers,web_hosting,usage_based,0.10,Webホスティングサービスのサーバーリソース利用
+2019,3,compute,unix,erp,usage_based,0.66,ERPサービスのUNIXサーバーリソース利用
+2019,3,compute,unix,database_service,usage_based,0.34,データベースサービスのUNIXサーバーリソース利用
+2019,3,storage,online_storage,erp,usage_based,0.27,ERPサービスのストレージリソース利用
+2019,3,storage,online_storage,crm,usage_based,0.23,CRMサービスのストレージリソース利用
+2019,3,storage,online_storage,file_sharing,usage_based,0.44,ファイル共有サービスのストレージリソース利用
+2019,3,storage,online_storage,database_service,usage_based,0.06,データベースサービスのストレージリソース利用
+2019,3,storage,offline_storage,backup_recovery,direct,1.00,バックアップ・リカバリサービスのストレージリソース利用
+2019,3,network,lan_wan,erp,usage_based,0.17,ERPサービスのネットワークリソース利用
+2019,3,network,lan_wan,crm,usage_based,0.18,CRMサービスのネットワークリソース利用
+2019,3,network,lan_wan,sales_force,usage_based,0.12,営業支援サービスのネットワークリソース利用
+2019,3,network,lan_wan,email,usage_based,0.23,メールサービスのネットワークリソース利用
+2019,3,network,lan_wan,collaboration,usage_based,0.10,コラボレーションサービスのネットワークリソース利用
+2019,3,network,lan_wan,file_sharing,usage_based,0.10,ファイル共有サービスのネットワークリソース利用
+2019,3,network,lan_wan,web_hosting,usage_based,0.10,Webホスティングサービスのネットワークリソース利用
+2019,3,network,transport,remote_access,direct,1.00,リモートアクセスサービスのネットワークリソース利用
+2019,3,platform,database,erp,usage_based,0.46,ERPサービスのデータベースリソース利用
+2019,3,platform,database,crm,usage_based,0.34,CRMサービスのデータベースリソース利用
+2019,3,platform,database,sales_force,usage_based,0.20,営業支援サービスのデータベースリソース利用
+2019,3,platform,middleware,erp,usage_based,0.56,ERPサービスのミドルウェアリソース利用
+2019,3,platform,middleware,crm,usage_based,0.44,CRMサービスのミドルウェアリソース利用
+2019,3,application,app_development,crm,direct,0.66,CRMサービスのアプリケーション開発リソース利用
+2019,3,application,app_development,sales_force,direct,0.34,営業支援サービスのアプリケーション開発リソース利用
+2019,3,application,app_support,erp,direct,0.56,ERPサービスのアプリケーションサポートリソース利用
+2019,3,application,app_support,crm,direct,0.34,CRMサービスのアプリケーションサポートリソース利用
+2019,3,application,app_support,sales_force,direct,0.10,営業支援サービスのアプリケーションサポートリソース利用
+2019,3,application,business_software,erp,direct,0.46,ERPサービスのビジネスソフトウェアリソース利用
+2019,3,application,business_software,crm,direct,0.24,CRMサービスのビジネスソフトウェアリソース利用
+2019,3,application,business_software,sales_force,direct,0.30,営業支援サービスのビジネスソフトウェアリソース利用
+2019,3,end_user,workspace,email,user_count,0.26,メールサービスのワークスペースリソース利用
+2019,3,end_user,workspace,collaboration,user_count,0.34,コラボレーションサービスのワークスペースリソース利用
+2019,3,end_user,workspace,file_sharing,user_count,0.20,ファイル共有サービスのワークスペースリソース利用
+2019,3,end_user,workspace,remote_access,user_count,0.20,リモートアクセスサービスのワークスペースリソース利用
+2019,3,end_user,end_user_software,email,direct,0.42,メールサービスのエンドユーザーソフトウェアリソース利用
+2019,3,end_user,end_user_software,collaboration,direct,0.58,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2019,3,end_user,helpdesk,helpdesk,direct,1.00,ヘルプデスクサービスのヘルプデスクリソース利用
+2019,3,security,security_ops,security_service,direct,1.00,セキュリティサービスのセキュリティリソース利用
+2019,3,data_center,enterprise_dc,erp,usage_based,0.26,ERPサービスのデータセンターリソース利用
+2019,3,data_center,enterprise_dc,crm,usage_based,0.23,CRMサービスのデータセンターリソース利用
+2019,3,data_center,enterprise_dc,sales_force,usage_based,0.10,営業支援サービスのデータセンターリソース利用
+2019,3,data_center,enterprise_dc,email,usage_based,0.11,メールサービスのデータセンターリソース利用
+2019,3,data_center,enterprise_dc,collaboration,usage_based,0.10,コラボレーションサービスのデータセンターリソース利用
+2019,3,data_center,enterprise_dc,file_sharing,usage_based,0.10,ファイル共有サービスのデータセンターリソース利用
+2019,3,data_center,enterprise_dc,database_service,usage_based,0.10,データベースサービスのデータセンターリソース利用
+2019,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2019,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2019,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2019,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2019,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2019,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2019,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2019,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2019,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2019,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト
+2020,3,compute,servers,erp,usage_based,0.35,ERPサービスのサーバーリソース利用
+2020,3,compute,servers,crm,usage_based,0.32,CRMサービスのサーバーリソース利用
+2020,3,compute,servers,sales_force,usage_based,0.12,営業支援サービスのサーバーリソース利用
+2020,3,compute,servers,file_sharing,usage_based,0.11,ファイル共有サービスのサーバーリソース利用
+2020,3,compute,servers,web_hosting,usage_based,0.10,Webホスティングサービスのサーバーリソース利用
+2020,3,compute,unix,erp,usage_based,0.65,ERPサービスのUNIXサーバーリソース利用
+2020,3,compute,unix,database_service,usage_based,0.35,データベースサービスのUNIXサーバーリソース利用
+2020,3,storage,online_storage,erp,usage_based,0.26,ERPサービスのストレージリソース利用
+2020,3,storage,online_storage,crm,usage_based,0.24,CRMサービスのストレージリソース利用
+2020,3,storage,online_storage,file_sharing,usage_based,0.45,ファイル共有サービスのストレージリソース利用
+2020,3,storage,online_storage,database_service,usage_based,0.05,データベースサービスのストレージリソース利用
+2020,3,storage,offline_storage,backup_recovery,direct,1.00,バックアップ・リカバリサービスのストレージリソース利用
+2020,3,network,lan_wan,erp,usage_based,0.16,ERPサービスのネットワークリソース利用
+2020,3,network,lan_wan,crm,usage_based,0.18,CRMサービスのネットワークリソース利用
+2020,3,network,lan_wan,sales_force,usage_based,0.12,営業支援サービスのネットワークリソース利用
+2020,3,network,lan_wan,email,usage_based,0.24,メールサービスのネットワークリソース利用
+2020,3,network,lan_wan,collaboration,usage_based,0.10,コラボレーションサービスのネットワークリソース利用
+2020,3,network,lan_wan,file_sharing,usage_based,0.10,ファイル共有サービスのネットワークリソース利用
+2020,3,network,lan_wan,web_hosting,usage_based,0.10,Webホスティングサービスのネットワークリソース利用
+2020,3,network,transport,remote_access,direct,1.00,リモートアクセスサービスのネットワークリソース利用
+2020,3,platform,database,erp,usage_based,0.45,ERPサービスのデータベースリソース利用
+2020,3,platform,database,crm,usage_based,0.35,CRMサービスのデータベースリソース利用
+2020,3,platform,database,sales_force,usage_based,0.20,営業支援サービスのデータベースリソース利用
+2020,3,platform,middleware,erp,usage_based,0.55,ERPサービスのミドルウェアリソース利用
+2020,3,platform,middleware,crm,usage_based,0.45,CRMサービスのミドルウェアリソース利用
+2020,3,application,app_development,crm,direct,0.65,CRMサービスのアプリケーション開発リソース利用
+2020,3,application,app_development,sales_force,direct,0.35,営業支援サービスのアプリケーション開発リソース利用
+2020,3,application,app_support,erp,direct,0.55,ERPサービスのアプリケーションサポートリソース利用
+2020,3,application,app_support,crm,direct,0.35,CRMサービスのアプリケーションサポートリソース利用
+2020,3,application,app_support,sales_force,direct,0.10,営業支援サービスのアプリケーションサポートリソース利用
+2020,3,application,business_software,erp,direct,0.45,ERPサービスのビジネスソフトウェアリソース利用
+2020,3,application,business_software,crm,direct,0.25,CRMサービスのビジネスソフトウェアリソース利用
+2020,3,application,business_software,sales_force,direct,0.30,営業支援サービスのビジネスソフトウェアリソース利用
+2020,3,end_user,workspace,email,user_count,0.25,メールサービスのワークスペースリソース利用
+2020,3,end_user,workspace,collaboration,user_count,0.35,コラボレーションサービスのワークスペースリソース利用
+2020,3,end_user,workspace,file_sharing,user_count,0.20,ファイル共有サービスのワークスペースリソース利用
+2020,3,end_user,workspace,remote_access,user_count,0.20,リモートアクセスサービスのワークスペースリソース利用
+2020,3,end_user,end_user_software,email,direct,0.40,メールサービスのエンドユーザーソフトウェアリソース利用
+2020,3,end_user,end_user_software,collaboration,direct,0.60,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2020,3,end_user,helpdesk,helpdesk,direct,1.00,ヘルプデスクサービスのヘルプデスクリソース利用
+2020,3,security,security_ops,security_service,direct,1.00,セキュリティサービスのセキュリティリソース利用
+2020,3,data_center,enterprise_dc,erp,usage_based,0.25,ERPサービスのデータセンターリソース利用
+2020,3,data_center,enterprise_dc,crm,usage_based,0.24,CRMサービスのデータセンターリソース利用
+2020,3,data_center,enterprise_dc,sales_force,usage_based,0.10,営業支援サービスのデータセンターリソース利用
+2020,3,data_center,enterprise_dc,email,usage_based,0.11,メールサービスのデータセンターリソース利用
+2020,3,data_center,enterprise_dc,collaboration,usage_based,0.10,コラボレーションサービスのデータセンターリソース利用
+2020,3,data_center,enterprise_dc,file_sharing,usage_based,0.10,ファイル共有サービスのデータセンターリソース利用
+2020,3,data_center,enterprise_dc,database_service,usage_based,0.10,データベースサービスのデータセンターリソース利用
+2020,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2020,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2020,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2020,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2020,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2020,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2020,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2020,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2020,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2020,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト
+2021,3,compute,servers,erp,usage_based,0.34,ERPサービスのサーバーリソース利用
+2021,3,compute,servers,crm,usage_based,0.33,CRMサービスのサーバーリソース利用
+2021,3,compute,servers,sales_force,usage_based,0.12,営業支援サービスのサーバーリソース利用
+2021,3,compute,servers,file_sharing,usage_based,0.11,ファイル共有サービスのサーバーリソース利用
+2021,3,compute,servers,web_hosting,usage_based,0.10,Webホスティングサービスのサーバーリソース利用
+2021,3,compute,unix,erp,usage_based,0.64,ERPサービスのUNIXサーバーリソース利用
+2021,3,compute,unix,database_service,usage_based,0.36,データベースサービスのUNIXサーバーリソース利用
+2021,3,storage,online_storage,erp,usage_based,0.25,ERPサービスのストレージリソース利用
+2021,3,storage,online_storage,crm,usage_based,0.25,CRMサービスのストレージリソース利用
+2021,3,storage,online_storage,file_sharing,usage_based,0.46,ファイル共有サービスのストレージリソース利用
+2021,3,storage,online_storage,database_service,usage_based,0.04,データベースサービスのストレージリソース利用
+2021,3,storage,offline_storage,backup_recovery,direct,1.00,バックアップ・リカバリサービスのストレージリソース利用
+2021,3,network,lan_wan,erp,usage_based,0.15,ERPサービスのネットワークリソース利用
+2021,3,network,lan_wan,crm,usage_based,0.17,CRMサービスのネットワークリソース利用
+2021,3,network,lan_wan,sales_force,usage_based,0.13,営業支援サービスのネットワークリソース利用
+2021,3,network,lan_wan,email,usage_based,0.25,メールサービスのネットワークリソース利用
+2021,3,network,lan_wan,collaboration,usage_based,0.10,コラボレーションサービスのネットワークリソース利用
+2021,3,network,lan_wan,file_sharing,usage_based,0.10,ファイル共有サービスのネットワークリソース利用
+2021,3,network,lan_wan,web_hosting,usage_based,0.10,Webホスティングサービスのネットワークリソース利用
+2021,3,network,transport,remote_access,direct,1.00,リモートアクセスサービスのネットワークリソース利用
+2021,3,platform,database,erp,usage_based,0.44,ERPサービスのデータベースリソース利用
+2021,3,platform,database,crm,usage_based,0.36,CRMサービスのデータベースリソース利用
+2021,3,platform,database,sales_force,usage_based,0.20,営業支援サービスのデータベースリソース利用
+2021,3,platform,middleware,erp,usage_based,0.54,ERPサービスのミドルウェアリソース利用
+2021,3,platform,middleware,crm,usage_based,0.46,CRMサービスのミドルウェアリソース利用
+2021,3,application,app_development,crm,direct,0.64,CRMサービスのアプリケーション開発リソース利用
+2021,3,application,app_development,sales_force,direct,0.36,営業支援サービスのアプリケーション開発リソース利用
+2021,3,application,app_support,erp,direct,0.54,ERPサービスのアプリケーションサポートリソース利用
+2021,3,application,app_support,crm,direct,0.36,CRMサービスのアプリケーションサポートリソース利用
+2021,3,application,app_support,sales_force,direct,0.10,営業支援サービスのアプリケーションサポートリソース利用
+2021,3,application,business_software,erp,direct,0.44,ERPサービスのビジネスソフトウェアリソース利用
+2021,3,application,business_software,crm,direct,0.26,CRMサービスのビジネスソフトウェアリソース利用
+2021,3,application,business_software,sales_force,direct,0.30,営業支援サービスのビジネスソフトウェアリソース利用
+2021,3,end_user,workspace,email,user_count,0.24,メールサービスのワークスペースリソース利用
+2021,3,end_user,workspace,collaboration,user_count,0.36,コラボレーションサービスのワークスペースリソース利用
+2021,3,end_user,workspace,file_sharing,user_count,0.20,ファイル共有サービスのワークスペースリソース利用
+2021,3,end_user,workspace,remote_access,user_count,0.20,リモートアクセスサービスのワークスペースリソース利用
+2021,3,end_user,end_user_software,email,direct,0.38,メールサービスのエンドユーザーソフトウェアリソース利用
+2021,3,end_user,end_user_software,collaboration,direct,0.62,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2021,3,end_user,helpdesk,helpdesk,direct,1.00,ヘルプデスクサービスのヘルプデスクリソース利用
+2021,3,security,security_ops,security_service,direct,1.00,セキュリティサービスのセキュリティリソース利用
+2021,3,data_center,enterprise_dc,erp,usage_based,0.24,ERPサービスのデータセンターリソース利用
+2021,3,data_center,enterprise_dc,crm,usage_based,0.25,CRMサービスのデータセンターリソース利用
+2021,3,data_center,enterprise_dc,sales_force,usage_based,0.10,営業支援サービスのデータセンターリソース利用
+2021,3,data_center,enterprise_dc,email,usage_based,0.11,メールサービスのデータセンターリソース利用
+2021,3,data_center,enterprise_dc,collaboration,usage_based,0.10,コラボレーションサービスのデータセンターリソース利用
+2021,3,data_center,enterprise_dc,file_sharing,usage_based,0.10,ファイル共有サービスのデータセンターリソース利用
+2021,3,data_center,enterprise_dc,database_service,usage_based,0.10,データベースサービスのデータセンターリソース利用
+2021,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2021,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2021,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2021,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2021,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2021,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2021,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2021,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2021,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2021,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト
+2022,3,compute,servers,erp,usage_based,0.33,ERPサービスのサーバーリソース利用
+2022,3,compute,servers,crm,usage_based,0.33,CRMサービスのサーバーリソース利用
+2022,3,compute,servers,sales_force,usage_based,0.13,営業支援サービスのサーバーリソース利用
+2022,3,compute,servers,file_sharing,usage_based,0.11,ファイル共有サービスのサーバーリソース利用
+2022,3,compute,servers,web_hosting,usage_based,0.10,Webホスティングサービスのサーバーリソース利用
+2022,3,compute,unix,erp,usage_based,0.63,ERPサービスのUNIXサーバーリソース利用
+2022,3,compute,unix,database_service,usage_based,0.37,データベースサービスのUNIXサーバーリソース利用
+2022,3,storage,online_storage,erp,usage_based,0.24,ERPサービスのストレージリソース利用
+2022,3,storage,online_storage,crm,usage_based,0.26,CRMサービスのストレージリソース利用
+2022,3,storage,online_storage,file_sharing,usage_based,0.47,ファイル共有サービスのストレージリソース利用
+2022,3,storage,online_storage,database_service,usage_based,0.03,データベースサービスのストレージリソース利用
+2022,3,storage,offline_storage,backup_recovery,direct,1.00,バックアップ・リカバリサービスのストレージリソース利用
+2022,3,network,lan_wan,erp,usage_based,0.14,ERPサービスのネットワークリソース利用
+2022,3,network,lan_wan,crm,usage_based,0.16,CRMサービスのネットワークリソース利用
+2022,3,network,lan_wan,sales_force,usage_based,0.14,営業支援サービスのネットワークリソース利用
+2022,3,network,lan_wan,email,usage_based,0.26,メールサービスのネットワークリソース利用
+2022,3,network,lan_wan,collaboration,usage_based,0.10,コラボレーションサービスのネットワークリソース利用
+2022,3,network,lan_wan,file_sharing,usage_based,0.10,ファイル共有サービスのネットワークリソース利用
+2022,3,network,lan_wan,web_hosting,usage_based,0.10,Webホスティングサービスのネットワークリソース利用
+2022,3,network,transport,remote_access,direct,1.00,リモートアクセスサービスのネットワークリソース利用
+2022,3,platform,database,erp,usage_based,0.43,ERPサービスのデータベースリソース利用
+2022,3,platform,database,crm,usage_based,0.37,CRMサービスのデータベースリソース利用
+2022,3,platform,database,sales_force,usage_based,0.20,営業支援サービスのデータベースリソース利用
+2022,3,platform,middleware,erp,usage_based,0.53,ERPサービスのミドルウェアリソース利用
+2022,3,platform,middleware,crm,usage_based,0.47,CRMサービスのミドルウェアリソース利用
+2022,3,application,app_development,crm,direct,0.63,CRMサービスのアプリケーション開発リソース利用
+2022,3,application,app_development,sales_force,direct,0.37,営業支援サービスのアプリケーション開発リソース利用
+2022,3,application,app_support,erp,direct,0.53,ERPサービスのアプリケーションサポートリソース利用
+2022,3,application,app_support,crm,direct,0.37,CRMサービスのアプリケーションサポートリソース利用
+2022,3,application,app_support,sales_force,direct,0.10,営業支援サービスのアプリケーションサポートリソース利用
+2022,3,application,business_software,erp,direct,0.43,ERPサービスのビジネスソフトウェアリソース利用
+2022,3,application,business_software,crm,direct,0.27,CRMサービスのビジネスソフトウェアリソース利用
+2022,3,application,business_software,sales_force,direct,0.30,営業支援サービスのビジネスソフトウェアリソース利用
+2022,3,end_user,workspace,email,user_count,0.23,メールサービスのワークスペースリソース利用
+2022,3,end_user,workspace,collaboration,user_count,0.37,コラボレーションサービスのワークスペースリソース利用
+2022,3,end_user,workspace,file_sharing,user_count,0.20,ファイル共有サービスのワークスペースリソース利用
+2022,3,end_user,workspace,remote_access,user_count,0.20,リモートアクセスサービスのワークスペースリソース利用
+2022,3,end_user,end_user_software,email,direct,0.36,メールサービスのエンドユーザーソフトウェアリソース利用
+2022,3,end_user,end_user_software,collaboration,direct,0.64,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2022,3,end_user,helpdesk,helpdesk,direct,1.00,ヘルプデスクサービスのヘルプデスクリソース利用
+2022,3,security,security_ops,security_service,direct,1.00,セキュリティサービスのセキュリティリソース利用
+2022,3,data_center,enterprise_dc,erp,usage_based,0.23,ERPサービスのデータセンターリソース利用
+2022,3,data_center,enterprise_dc,crm,usage_based,0.26,CRMサービスのデータセンターリソース利用
+2022,3,data_center,enterprise_dc,sales_force,usage_based,0.10,営業支援サービスのデータセンターリソース利用
+2022,3,data_center,enterprise_dc,email,usage_based,0.11,メールサービスのデータセンターリソース利用
+2022,3,data_center,enterprise_dc,collaboration,usage_based,0.10,コラボレーションサービスのデータセンターリソース利用
+2022,3,data_center,enterprise_dc,file_sharing,usage_based,0.10,ファイル共有サービスのデータセンターリソース利用
+2022,3,data_center,enterprise_dc,database_service,usage_based,0.10,データベースサービスのデータセンターリソース利用
+2022,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2022,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2022,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2022,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2022,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2022,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2022,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2022,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2022,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2022,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト
+2023,3,compute,servers,erp,usage_based,0.38,ERPサービスのサーバーリソース利用
+2023,3,compute,servers,crm,usage_based,0.31,CRMサービスのサーバーリソース利用
+2023,3,compute,servers,sales_force,usage_based,0.12,営業支援サービスのサーバーリソース利用
+2023,3,compute,servers,file_sharing,usage_based,0.09,ファイル共有サービスのサーバーリソース利用
+2023,3,compute,servers,web_hosting,usage_based,0.1,Webホスティングサービスのサーバーリソース利用
+2023,3,compute,unix,erp,usage_based,0.68,ERPサービスのUNIXサーバーリソース利用
+2023,3,compute,unix,database_service,usage_based,0.32,データベースサービスのUNIXサーバーリソース利用
+2023,3,storage,online_storage,erp,usage_based,0.28,ERPサービスのストレージリソース利用
+2023,3,storage,online_storage,crm,usage_based,0.22,CRMサービスのストレージリソース利用
+2023,3,storage,online_storage,file_sharing,usage_based,0.38,ファイル共有サービスのストレージリソース利用
+2023,3,storage,online_storage,database_service,usage_based,0.12,データベースサービスのストレージリソース利用
+2023,3,storage,offline_storage,backup_recovery,direct,1.0,バックアップ・リカバリサービスのストレージリソース利用
+2023,3,network,lan_wan,erp,usage_based,0.18,ERPサービスのネットワークリソース利用
+2023,3,network,lan_wan,crm,usage_based,0.22,CRMサービスのネットワークリソース利用
+2023,3,network,lan_wan,sales_force,usage_based,0.12,営業支援サービスのネットワークリソース利用
+2023,3,network,lan_wan,email,usage_based,0.18,メールサービスのネットワークリソース利用
+2023,3,network,lan_wan,collaboration,usage_based,0.12,コラボレーションサービスのネットワークリソース利用
+2023,3,network,lan_wan,file_sharing,usage_based,0.08,ファイル共有サービスのネットワークリソース利用
+2023,3,network,lan_wan,web_hosting,usage_based,0.1,Webホスティングサービスのネットワークリソース利用
+2023,3,network,transport,remote_access,direct,1.0,リモートアクセスサービスのネットワークリソース利用
+2023,3,platform,database,erp,usage_based,0.48,ERPサービスのデータベースリソース利用
+2023,3,platform,database,crm,usage_based,0.32,CRMサービスのデータベースリソース利用
+2023,3,platform,database,sales_force,usage_based,0.2,営業支援サービスのデータベースリソース利用
+2023,3,platform,middleware,erp,usage_based,0.58,ERPサービスのミドルウェアリソース利用
+2023,3,platform,middleware,crm,usage_based,0.42,CRMサービスのミドルウェアリソース利用
+2023,3,application,app_development,crm,direct,0.68,CRMサービスのアプリケーション開発リソース利用
+2023,3,application,app_development,sales_force,direct,0.32,営業支援サービスのアプリケーション開発リソース利用
+2023,3,application,app_support,erp,direct,0.58,ERPサービスのアプリケーションサポートリソース利用
+2023,3,application,app_support,crm,direct,0.32,CRMサービスのアプリケーションサポートリソース利用
+2023,3,application,app_support,sales_force,direct,0.1,営業支援サービスのアプリケーションサポートリソース利用
+2023,3,application,business_software,erp,direct,0.48,ERPサービスのビジネスソフトウェアリソース利用
+2023,3,application,business_software,crm,direct,0.22,CRMサービスのビジネスソフトウェアリソース利用
+2023,3,application,business_software,sales_force,direct,0.3,営業支援サービスのビジネスソフトウェアリソース利用
+2023,3,end_user,workspace,email,user_count,0.28,メールサービスのワークスペースリソース利用
+2023,3,end_user,workspace,collaboration,user_count,0.32,コラボレーションサービスのワークスペースリソース利用
+2023,3,end_user,workspace,file_sharing,user_count,0.18,ファイル共有サービスのワークスペースリソース利用
+2023,3,end_user,workspace,remote_access,user_count,0.22,リモートアクセスサービスのワークスペースリソース利用
+2023,3,end_user,end_user_software,email,direct,0.48,メールサービスのエンドユーザーソフトウェアリソース利用
+2023,3,end_user,end_user_software,collaboration,direct,0.52,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2023,3,end_user,helpdesk,helpdesk,direct,1.0,ヘルプデスクサービスのヘルプデスクリソース利用
+2023,3,security,security_ops,security_service,direct,1.0,セキュリティサービスのセキュリティリソース利用
+2023,3,data_center,enterprise_dc,erp,usage_based,0.28,ERPサービスのデータセンターリソース利用
+2023,3,data_center,enterprise_dc,crm,usage_based,0.22,CRMサービスのデータセンターリソース利用
+2023,3,data_center,enterprise_dc,sales_force,usage_based,0.1,営業支援サービスのデータセンターリソース利用
+2023,3,data_center,enterprise_dc,email,usage_based,0.1,メールサービスのデータセンターリソース利用
+2023,3,data_center,enterprise_dc,collaboration,usage_based,0.1,コラボレーションサービスのデータセンターリソース利用
+2023,3,data_center,enterprise_dc,file_sharing,usage_based,0.1,ファイル共有サービスのデータセンターリソース利用
+2023,3,data_center,enterprise_dc,database_service,usage_based,0.1,データベースサービスのデータセンターリソース利用
+2023,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2023,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2023,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2023,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2023,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2023,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2023,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2023,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2023,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2023,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト
+2024,3,compute,servers,erp,usage_based,0.36,ERPサービスのサーバーリソース利用
+2024,3,compute,servers,crm,usage_based,0.32,CRMサービスのサーバーリソース利用
+2024,3,compute,servers,sales_force,usage_based,0.12,営業支援サービスのサーバーリソース利用
+2024,3,compute,servers,file_sharing,usage_based,0.08,ファイル共有サービスのサーバーリソース利用
+2024,3,compute,servers,web_hosting,usage_based,0.12,Webホスティングサービスのサーバーリソース利用
+2024,3,compute,unix,erp,usage_based,0.65,ERPサービスのUNIXサーバーリソース利用
+2024,3,compute,unix,database_service,usage_based,0.35,データベースサービスのUNIXサーバーリソース利用
+2024,3,storage,online_storage,erp,usage_based,0.25,ERPサービスのストレージリソース利用
+2024,3,storage,online_storage,crm,usage_based,0.25,CRMサービスのストレージリソース利用
+2024,3,storage,online_storage,file_sharing,usage_based,0.35,ファイル共有サービスのストレージリソース利用
+2024,3,storage,online_storage,database_service,usage_based,0.15,データベースサービスのストレージリソース利用
+2024,3,storage,offline_storage,backup_recovery,direct,1.0,バックアップ・リカバリサービスのストレージリソース利用
+2024,3,network,lan_wan,erp,usage_based,0.16,ERPサービスのネットワークリソース利用
+2024,3,network,lan_wan,crm,usage_based,0.24,CRMサービスのネットワークリソース利用
+2024,3,network,lan_wan,sales_force,usage_based,0.12,営業支援サービスのネットワークリソース利用
+2024,3,network,lan_wan,email,usage_based,0.16,メールサービスのネットワークリソース利用
+2024,3,network,lan_wan,collaboration,usage_based,0.14,コラボレーションサービスのネットワークリソース利用
+2024,3,network,lan_wan,file_sharing,usage_based,0.08,ファイル共有サービスのネットワークリソース利用
+2024,3,network,lan_wan,web_hosting,usage_based,0.1,Webホスティングサービスのネットワークリソース利用
+2024,3,network,transport,remote_access,direct,1.0,リモートアクセスサービスのネットワークリソース利用
+2024,3,platform,database,erp,usage_based,0.45,ERPサービスのデータベースリソース利用
+2024,3,platform,database,crm,usage_based,0.35,CRMサービスのデータベースリソース利用
+2024,3,platform,database,sales_force,usage_based,0.2,営業支援サービスのデータベースリソース利用
+2024,3,platform,middleware,erp,usage_based,0.55,ERPサービスのミドルウェアリソース利用
+2024,3,platform,middleware,crm,usage_based,0.45,CRMサービスのミドルウェアリソース利用
+2024,3,application,app_development,crm,direct,0.65,CRMサービスのアプリケーション開発リソース利用
+2024,3,application,app_development,sales_force,direct,0.35,営業支援サービスのアプリケーション開発リソース利用
+2024,3,application,app_support,erp,direct,0.55,ERPサービスのアプリケーションサポートリソース利用
+2024,3,application,app_support,crm,direct,0.35,CRMサービスのアプリケーションサポートリソース利用
+2024,3,application,app_support,sales_force,direct,0.1,営業支援サービスのアプリケーションサポートリソース利用
+2024,3,application,business_software,erp,direct,0.45,ERPサービスのビジネスソフトウェアリソース利用
+2024,3,application,business_software,crm,direct,0.25,CRMサービスのビジネスソフトウェアリソース利用
+2024,3,application,business_software,sales_force,direct,0.3,営業支援サービスのビジネスソフトウェアリソース利用
+2024,3,end_user,workspace,email,user_count,0.25,メールサービスのワークスペースリソース利用
+2024,3,end_user,workspace,collaboration,user_count,0.35,コラボレーションサービスのワークスペースリソース利用
+2024,3,end_user,workspace,file_sharing,user_count,0.15,ファイル共有サービスのワークスペースリソース利用
+2024,3,end_user,workspace,remote_access,user_count,0.25,リモートアクセスサービスのワークスペースリソース利用
+2024,3,end_user,end_user_software,email,direct,0.45,メールサービスのエンドユーザーソフトウェアリソース利用
+2024,3,end_user,end_user_software,collaboration,direct,0.55,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2024,3,end_user,helpdesk,helpdesk,direct,1.0,ヘルプデスクサービスのヘルプデスクリソース利用
+2024,3,security,security_ops,security_service,direct,1.0,セキュリティサービスのセキュリティリソース利用
+2024,3,data_center,enterprise_dc,erp,usage_based,0.25,ERPサービスのデータセンターリソース利用
+2024,3,data_center,enterprise_dc,crm,usage_based,0.25,CRMサービスのデータセンターリソース利用
+2024,3,data_center,enterprise_dc,sales_force,usage_based,0.1,営業支援サービスのデータセンターリソース利用
+2024,3,data_center,enterprise_dc,email,usage_based,0.1,メールサービスのデータセンターリソース利用
+2024,3,data_center,enterprise_dc,collaboration,usage_based,0.1,コラボレーションサービスのデータセンターリソース利用
+2024,3,data_center,enterprise_dc,file_sharing,usage_based,0.1,ファイル共有サービスのデータセンターリソース利用
+2024,3,data_center,enterprise_dc,database_service,usage_based,0.1,データベースサービスのデータセンターリソース利用
+2024,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2024,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2024,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2024,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2024,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2024,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2024,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2024,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2024,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2024,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト
+2025,3,compute,servers,erp,usage_based,0.35,ERPサービスのサーバーリソース利用
+2025,3,compute,servers,crm,usage_based,0.32,CRMサービスのサーバーリソース利用
+2025,3,compute,servers,sales_force,usage_based,0.13,営業支援サービスのサーバーリソース利用
+2025,3,compute,servers,file_sharing,usage_based,0.08,ファイル共有サービスのサーバーリソース利用
+2025,3,compute,servers,web_hosting,usage_based,0.12,Webホスティングサービスのサーバーリソース利用
+2025,3,compute,unix,erp,usage_based,0.62,ERPサービスのUNIXサーバーリソース利用
+2025,3,compute,unix,database_service,usage_based,0.38,データベースサービスのUNIXサーバーリソース利用
+2025,3,storage,online_storage,erp,usage_based,0.22,ERPサービスのストレージリソース利用
+2025,3,storage,online_storage,crm,usage_based,0.28,CRMサービスのストレージリソース利用
+2025,3,storage,online_storage,file_sharing,usage_based,0.32,ファイル共有サービスのストレージリソース利用
+2025,3,storage,online_storage,database_service,usage_based,0.18,データベースサービスのストレージリソース利用
+2025,3,storage,offline_storage,backup_recovery,direct,1.0,バックアップ・リカバリサービスのストレージリソース利用
+2025,3,network,lan_wan,erp,usage_based,0.15,ERPサービスのネットワークリソース利用
+2025,3,network,lan_wan,crm,usage_based,0.25,CRMサービスのネットワークリソース利用
+2025,3,network,lan_wan,sales_force,usage_based,0.12,営業支援サービスのネットワークリソース利用
+2025,3,network,lan_wan,email,usage_based,0.15,メールサービスのネットワークリソース利用
+2025,3,network,lan_wan,collaboration,usage_based,0.15,コラボレーションサービスのネットワークリソース利用
+2025,3,network,lan_wan,file_sharing,usage_based,0.08,ファイル共有サービスのネットワークリソース利用
+2025,3,network,lan_wan,web_hosting,usage_based,0.1,Webホスティングサービスのネットワークリソース利用
+2025,3,network,transport,remote_access,direct,1.0,リモートアクセスサービスのネットワークリソース利用
+2025,3,platform,database,erp,usage_based,0.42,ERPサービスのデータベースリソース利用
+2025,3,platform,database,crm,usage_based,0.38,CRMサービスのデータベースリソース利用
+2025,3,platform,database,sales_force,usage_based,0.2,営業支援サービスのデータベースリソース利用
+2025,3,platform,middleware,erp,usage_based,0.52,ERPサービスのミドルウェアリソース利用
+2025,3,platform,middleware,crm,usage_based,0.48,CRMサービスのミドルウェアリソース利用
+2025,3,application,app_development,crm,direct,0.62,CRMサービスのアプリケーション開発リソース利用
+2025,3,application,app_development,sales_force,direct,0.38,営業支援サービスのアプリケーション開発リソース利用
+2025,3,application,app_support,erp,direct,0.52,ERPサービスのアプリケーションサポートリソース利用
+2025,3,application,app_support,crm,direct,0.38,CRMサービスのアプリケーションサポートリソース利用
+2025,3,application,app_support,sales_force,direct,0.1,営業支援サービスのアプリケーションサポートリソース利用
+2025,3,application,business_software,erp,direct,0.42,ERPサービスのビジネスソフトウェアリソース利用
+2025,3,application,business_software,crm,direct,0.28,CRMサービスのビジネスソフトウェアリソース利用
+2025,3,application,business_software,sales_force,direct,0.3,営業支援サービスのビジネスソフトウェアリソース利用
+2025,3,end_user,workspace,email,user_count,0.22,メールサービスのワークスペースリソース利用
+2025,3,end_user,workspace,collaboration,user_count,0.38,コラボレーションサービスのワークスペースリソース利用
+2025,3,end_user,workspace,file_sharing,user_count,0.12,ファイル共有サービスのワークスペースリソース利用
+2025,3,end_user,workspace,remote_access,user_count,0.28,リモートアクセスサービスのワークスペースリソース利用
+2025,3,end_user,end_user_software,email,direct,0.42,メールサービスのエンドユーザーソフトウェアリソース利用
+2025,3,end_user,end_user_software,collaboration,direct,0.58,コラボレーションサービスのエンドユーザーソフトウェアリソース利用
+2025,3,end_user,helpdesk,helpdesk,direct,1.0,ヘルプデスクサービスのヘルプデスクリソース利用
+2025,3,security,security_ops,security_service,direct,1.0,セキュリティサービスのセキュリティリソース利用
+2025,3,data_center,enterprise_dc,erp,usage_based,0.22,ERPサービスのデータセンターリソース利用
+2025,3,data_center,enterprise_dc,crm,usage_based,0.28,CRMサービスのデータセンターリソース利用
+2025,3,data_center,enterprise_dc,sales_force,usage_based,0.1,営業支援サービスのデータセンターリソース利用
+2025,3,data_center,enterprise_dc,email,usage_based,0.1,メールサービスのデータセンターリソース利用
+2025,3,data_center,enterprise_dc,collaboration,usage_based,0.1,コラボレーションサービスのデータセンターリソース利用
+2025,3,data_center,enterprise_dc,file_sharing,usage_based,0.1,ファイル共有サービスのデータセンターリソース利用
+2025,3,data_center,enterprise_dc,database_service,usage_based,0.1,データベースサービスのデータセンターリソース利用
+2025,3,it_management,it_finance,erp,consumption_based,0.25,IT for IT - ERPサービスのIT管理コスト
+2025,3,it_management,it_finance,crm,consumption_based,0.20,IT for IT - CRMサービスのIT管理コスト
+2025,3,it_management,it_finance,email,consumption_based,0.15,IT for IT - メールサービスのIT管理コスト
+2025,3,it_management,it_finance,collaboration,consumption_based,0.10,IT for IT - コラボレーションサービスのIT管理コスト
+2025,3,it_management,it_finance,security_service,consumption_based,0.20,IT for IT - セキュリティサービスのIT管理コスト
+2025,3,it_management,it_finance,file_sharing,consumption_based,0.10,IT for IT - ファイル共有サービスのIT管理コスト
+2025,3,it_management,strategy_planning,erp,consumption_based,0.30,IT for IT - ERPサービスの戦略計画コスト
+2025,3,it_management,strategy_planning,crm,consumption_based,0.25,IT for IT - CRMサービスの戦略計画コスト
+2025,3,it_management,strategy_planning,security_service,consumption_based,0.25,IT for IT - セキュリティサービスの戦略計画コスト
+2025,3,it_management,strategy_planning,remote_access,consumption_based,0.20,IT for IT - リモートアクセスサービスの戦略計画コスト

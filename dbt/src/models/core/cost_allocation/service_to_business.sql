@@ -3,17 +3,16 @@ with service_costs as (
 ),
 
 business_units as (
-    select * from {{ ref('stg_business_units') }}
+    select * from {{ ref('stg__master__business_units') }}
 ),
 
 allocations as (
-    select * from {{ ref('stg_service_to_business_allocations') }}
+    select * from {{ ref('stg__allocations__service_to_business') }}
 ),
 
 -- テクノロジーサービスコストとビジネスユニットへの配賦
 service_to_business_allocation as (
     select
-        sc.cost_entry_id,
         sc.fiscal_year,
         sc.fiscal_month,
         sc.cost_pool_id,
@@ -33,15 +32,21 @@ service_to_business_allocation as (
         bu.parent_id,
         a.allocation_method,
         a.allocation_value,
-        sc.allocated_amount * a.allocation_value as allocated_amount,
+        ROUND((sc.allocated_amount * a.allocation_value)::numeric, 0) as allocated_amount,
         sc.vendor,
         sc.cost_description,
         sc.tower_allocation_description,
         sc.service_allocation_description,
         a.description as business_allocation_description
     from service_costs sc
-    inner join allocations a on sc.service_id = a.service_id
-    left join business_units bu on a.business_unit_id = bu.business_unit_id
+    inner join allocations a 
+        on sc.fiscal_year = a.fiscal_year
+        and sc.fiscal_month = a.fiscal_month
+        and sc.service_id = a.service_id
+    left join business_units bu
+        on a.fiscal_year = bu.fiscal_year
+        and a.fiscal_month = bu.fiscal_month
+        and a.business_unit_id = bu.business_unit_id
 )
 
 select * from service_to_business_allocation

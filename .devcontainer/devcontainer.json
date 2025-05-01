@@ -1,45 +1,49 @@
-// Update the VARIANT arg in docker-compose.yml to pick a Python version: 3, 3.8, 3.7, 3.6
 {
     "name": "dbt",
     "dockerComposeFile": "../compose.yml",
     "service": "dbt",
-    "workspaceFolder": "/workspace",
-    "settings": {
-        "terminal.integrated.defaultProfile.linux#": "/bin/bash",
-        "python.pythonPath": "/usr/local/bin/python",
-        "python.languageServer": "Pylance",
-        "files.associations": {
-            "*.sql": "jinja-sql"
-        },
-        "sqltools.connections": [
-            {
-                "name": "Database",
-                "driver": "PostgreSQL",
-                "previewLimit": 50,
-                "server": "postgres",
-                "port": 5432,
-                "username": "postgres",
-                "password": "postgres",
-                "database": "Datamart"
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux#": "/bin/bash",
+                "python.pythonPath": "/usr/local/bin/python",
+                "python.languageServer": "Pylance",
+                "files.associations": {
+                    "*.sql": "jinja-sql"
+                },
+                "sqltools.connections": [
+                    {
+                        "name": "Database",
+                        "driver": "PostgreSQL",
+                        "previewLimit": 50,
+                        "server": "postgres",
+                        "port": 5432,
+                        "username": "tbm_user",
+                        "password": "tbm_password",
+                        "database": "tbm_db"
+                    }
+                ],
+                "sql.linter.executablePath": "sqlfluff",
+                "sql.format.enable": false
             }
-        ],
-        "sql.linter.executablePath": "sqlfluff",
-        "sql.format.enable": false
-    },
-    "extensions": [
-        "bastienboutonnet.vscode-dbt",
-        "dorzey.vscode-sqlfluff",
-        "editorconfig.editorconfig",
-        "innoverio.vscode-dbt-power-user",
-        "ms-azuretools.vscode-docker",
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "visualstudioexptteam.vscodeintellicode",
-        "eamodio.gitlens",
-        "mtxr.sqltools-driver-pg",
-        "mtxr.sqltools",
-        "redhat.vscode-yaml",
-        "samuelcolvin.jinjahtml",
-        "ms-python.vscode-pylance"
-    ]
+        },
+        "extensions": [
+            "bastienboutonnet.vscode-dbt",
+            "dorzey.vscode-sqlfluff",
+            "editorconfig.editorconfig",
+            "innoverio.vscode-dbt-power-user",
+            "ms-azuretools.vscode-docker",
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "visualstudioexptteam.vscodeintellicode",
+            "eamodio.gitlens",
+            "mtxr.sqltools-driver-pg",
+            "mtxr.sqltools",
+            "redhat.vscode-yaml",
+            "samuelcolvin.jinjahtml",
+            "ms-python.vscode-pylance",
+            "janisdd.vscode-edit-csv"
+        ]
+    }
 }

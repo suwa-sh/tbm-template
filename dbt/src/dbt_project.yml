@@ -24,12 +24,13 @@ models:
       +materialized: table
     marts:
       +materialized: table
-      finance:
-        +schema: finance
-      it:
-        +schema: it
-      business:
-        +schema: business
+      # schemaを分ける場合
+      # finance:
+      #   +schema: finance
+      # it:
+      #   +schema: it
+      # business:
+      #   +schema: business
 
 seeds:
   tbm_template:
