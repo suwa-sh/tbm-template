@@ -54,33 +54,30 @@
 
 ```mermaid
 graph TD
-    subgraph データ収集サンプル
+    EXT1[Salesforce]
+    EXT2[SAP]
+    EXT3[MS365]
+    EXT4[CRM]
+
+    subgraph tbmt[TBM template]
         DLT[dlt]
-        EXT1[Salesforce]
-        EXT2[SAP]
-        EXT3[MS365]
-        EXT4[CRM]
-        EXT1 --> DLT
-        EXT2 --> DLT
-        EXT3 --> DLT
-        EXT4 --> DLT
-    end
-
-    subgraph データストレージ
-        DB[(PostgreSQL)]
-        DLT --> DB
-    end
-
-    subgraph データ変換
         DBT[dbt]
-        DB --> DBT
-        DBT --> DB
+
+        DB[(PostgreSQL)]
+
+        GF[Grafana]
     end
 
-    subgraph 可視化
-        GF[Grafana]
-        DB --> GF
-    end
+    EXT1 --> DLT
+    EXT2 --> DLT
+    EXT3 --> DLT
+    EXT4 --> DLT
+
+    DLT --> DB
+    DB --> DBT
+    DBT --> DB
+
+    DB --> GF
 ```
 
 ## 動作の仕組み
@@ -107,12 +104,46 @@ graph TD
    - 組織の実情に合わせて、配賦ルール、データ収集、可視化などをカスタマイズします。
    - テンプレートはあくまで出発点であり、実際の環境に合わせて拡張していくことを想定しています。
 
-## 前提条件
+
+### 配置図
+
+```mermaid
+graph TD
+    subgraph compose[Docker Compose]
+        subgraph ELTC[ELT container]
+            DLT[dlt]
+            DBT[dbt]
+        end
+
+        subgraph DBC[DB container]
+            DB[(PostgreSQL)]
+        end
+
+        subgraph BIC[BI container]
+            GF[Grafana]
+        end
+    end
+
+    DLT --> DB
+    DB --> DBT
+    DBT --> DB
+
+    DB --> GF
+
+    user[開発者] --> GF
+    user --> DB
+    user --> DLT
+    user --> DBT
+```
+
+- vscode devコンテナ での開発が単純になる様に、dltとdbtは同じコンテナに配備しています。
+
+## セットアップ方法
+
+### 0. 前提条件
 
 - Docker Desktopがインストールされていること
 - Git がインストールされていること
-
-## セットアップ方法
 
 ### 1. リポジトリのクローン
 
