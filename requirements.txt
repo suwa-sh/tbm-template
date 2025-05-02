@@ -3,9 +3,9 @@ dbt-core==1.9.4
 dbt-postgres==1.9.0
 
 # データ収集
-dlt==0.3.0
-pandas==2.0.0
-numpy==1.24.3
+dlt==1.10.0
+pandas==2.2.3
+numpy==2.2.5
 requests==2.32.2
 
 # ユーティリティ

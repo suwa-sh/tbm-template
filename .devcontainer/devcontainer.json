@@ -1,7 +1,7 @@
 {
     "name": "dbt",
     "dockerComposeFile": "../compose.yml",
-    "service": "dbt",
+    "service": "elt",
     "workspaceFolder": "/app",
     "customizations": {
         "vscode": {

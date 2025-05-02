@@ -1,16 +1,15 @@
 version: '3.8'
 
 services:
-  # PostgreSQLデータベース
+  # PostgreSQL (データベース)
   postgres:
     image: postgres:15
-    container_name: tbm-postgres
     environment:
       POSTGRES_USER: tbm_user
       POSTGRES_PASSWORD: tbm_password
       POSTGRES_DB: tbm_db
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - ./container_data/postgres:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     healthcheck:
@@ -20,11 +19,10 @@ services:
       retries: 5
 
   # dbt (データパイプライン) & dlt (データ収集)
-  dbt:
+  elt:
     build:
       context: .
       dockerfile: Dockerfile.dev
-    container_name: tbm-dbt
     volumes:
       - .:/app
     environment:
@@ -42,10 +40,9 @@ services:
         condition: service_healthy
     command: tail -f /dev/null
 
-  # Grafana (可視化)
+  # grafana (可視化)
   grafana:
     image: grafana/grafana:latest
-    container_name: tbm-grafana
     volumes:
       - ./grafana/provisioning:/etc/grafana/provisioning
     environment:
@@ -62,6 +59,3 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-
-volumes:
-  postgres_data:

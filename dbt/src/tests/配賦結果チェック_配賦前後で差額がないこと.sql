@@ -10,7 +10,7 @@ entries as (
       fiscal_year
 ),
 
-twoers as (
+towers as (
   SELECT
       fiscal_year,
       sum(allocated_amount) as tower_sum
@@ -64,7 +64,7 @@ final as (
       c.capability_sum - b.business_unit_sum as capability_diff
   FROM
     entries e
-  LEFT JOIN twoers t ON e.fiscal_year = t.fiscal_year
+  LEFT JOIN towers t ON e.fiscal_year = t.fiscal_year
   LEFT JOIN services s ON e.fiscal_year = s.fiscal_year
   LEFT JOIN business_unit b ON e.fiscal_year = b.fiscal_year
   LEFT JOIN capability c ON e.fiscal_year = c.fiscal_year
