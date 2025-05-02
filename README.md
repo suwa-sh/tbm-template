@@ -163,8 +163,8 @@ docker compose up -d
 ### 3. サンプルデータのロード
 
 ```bash
-# dbtコンテナに入る
-docker exec -it tbm-dbt bash
+# ELTコンテナに入る
+docker exec -it elt bash
 
 # サンプルデータをロード
 cd /app/dbt/src
@@ -248,8 +248,8 @@ tbm-template/
 これらのコネクタを実際の環境に合わせてカスタマイズし、`dlt/main.py`を実行することで、データを収集できます。
 
 ```bash
-# dbtコンテナににdltもインストールされています
-docker exec -it tbm-dbt bash
+# ELTコンテナににdltもインストールされています
+docker exec -it elt bash
 
 # データ収集を実行
 cd /app
