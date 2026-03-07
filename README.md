@@ -258,3 +258,50 @@ python ./dlt/main.py
 # コンテナから出る
 exit
 ```
+
+## Agent Skills (Claude Code)
+
+このプロジェクトには、[Claude Code](https://docs.anthropic.com/en/docs/claude-code)で利用できるAgent Skillsが含まれています。
+
+### 利用可能なスキル
+
+| スキル | 説明 | トリガー例 |
+| --- | --- | --- |
+| `tbm-customize` | 配賦ルール・マスターデータ・コストデータのカスタマイズ支援 | 「部門を追加したい」「配賦比率を変更」 |
+| `tbm-model` | dbtモデルの追加・変更支援 | 「新しいマートを作成」「配賦ステップを追加」 |
+| `tbm-dashboard` | Grafanaダッシュボードの追加・編集支援 | 「ダッシュボードを追加」「グラフを追加」 |
+| `tbm-connector` | dltコネクタの追加・カスタマイズ支援 | 「コネクタを追加」「外部サービスを接続」 |
+
+### インストール
+
+```bash
+# リポジトリを取得
+git clone https://github.com/suwa-sh/tbm-template.git
+cd tbm-template
+```
+
+利用パターンに応じてコピー先を選択してください。
+
+#### A. TBMデータを管理するリポジトリに配置する場合
+
+フォークしたリポジトリや、TBMデータを管理する専用リポジトリで利用する場合に適しています。チームでスキルを共有できます。
+
+```bash
+dest=/path/to/your-tbm-repo/.claude/skills
+mkdir -p "$dest"
+for d in .claude/skills/tbm-*; do cp -R "$d" "$dest/$(basename "$d")"; done
+```
+
+#### B. ユーザーグローバルに配置する場合
+
+どのディレクトリからでもスキルを利用したい場合に適しています。
+
+```bash
+dest=~/.claude/skills
+mkdir -p "$dest"
+for d in .claude/skills/tbm-*; do cp -R "$d" "$dest/$(basename "$d")"; done
+```
+
+### 使い方
+
+Claude Codeのチャットで、トリガー例のようなメッセージを送信すると、対応するスキルが自動的に発動します。
